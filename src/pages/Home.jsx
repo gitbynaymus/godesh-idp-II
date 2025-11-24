@@ -6,7 +6,7 @@ import Hero from "../components/Hero";
 import WhyChooseUs from "../components/WhyChooseUs";
 // import FeaturedDestinations from "../components/FeaturedDestinations";
 // import TravelTips from "../components/TravelTips";
-// import Reviews from "../components/Reviews";
+import Reviews from "../components/Reviews";
 // import Newsletter from "../components/Newsletter";
 import SubscribeSection from "../components/SubscribeSection";
 
@@ -29,9 +29,9 @@ const Home = () => {
       <AnimatedSection animation="fade-up">
         <WhyChooseUs />
       </AnimatedSection>
-      {/* <AnimatedSection animation="fade-up">
+      <AnimatedSection animation="fade-up">
         <Reviews />
-      </AnimatedSection> */}
+      </AnimatedSection>
       <AnimatedSection animation="fade-up">
         {/* <Newsletter /> */}
         <SubscribeSection />
