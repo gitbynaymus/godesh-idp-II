@@ -8,7 +8,7 @@ import WhyChooseUs from "../components/WhyChooseUs";
 // import TravelTips from "../components/TravelTips";
 // import Reviews from "../components/Reviews";
 // import Newsletter from "../components/Newsletter";
-import SubscribeSection from "../components/SubscribeSection";
+// import SubscribeSection from "../components/SubscribeSection";
 
 const Home = () => {
   return (
@@ -34,7 +34,7 @@ const Home = () => {
       </AnimatedSection> */}
       <AnimatedSection animation="fade-up">
         {/* <Newsletter /> */}
-        <SubscribeSection />
+        {/* <SubscribeSection /> */}
       </AnimatedSection>
     </>
   );
