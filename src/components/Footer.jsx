@@ -74,20 +74,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="space-y-3">
-            <div className="uppercase dark:text-primary">Social media</div>
-            <div className="flex justify-start space-x-4">
-              <Link>
-                <FaFacebook size={22} />
-              </Link>
-              <Link>
-                <FaInstagramSquare size={22} />
-              </Link>
-              <Link>
-                <FaTwitter size={22} />
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
 
