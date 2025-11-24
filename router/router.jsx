@@ -47,46 +47,46 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
-      {
-        path: "/login",
-        element: <Login />,
-      },
-      {
-        path: "/register",
-        element: <SignUp />,
-      },
-      {
-        path: "/package/:id",
-        element: <PackageDetails />,
-      },
-      {
-        path: "/guide/:id",
-        element: <GuideDetails />,
-      },
-      {
-        path: "/all-packages",
-        element: <AllPackages />,
-      },
-      {
-        path: "/all-stories",
-        element: <AllStories />,
-      },
-      {
-        path: "/all-guides",
-        element: <AllGuides />,
-      },
-      {
-        path: "/forgetPassword",
-        element: <ForgotPassword />,
-      },
-            {
-        path: "/about-us",
-        element: <AboutUs />,
-      },
-      {
-        path: "/offer",
-        element: <Offer />,
-      },
+      // {
+      //   path: "/login",
+      //   element: <Login />,
+      // },
+      // {
+      //   path: "/register",
+      //   element: <SignUp />,
+      // },
+      // {
+      //   path: "/package/:id",
+      //   element: <PackageDetails />,
+      // },
+      // {
+      //   path: "/guide/:id",
+      //   element: <GuideDetails />,
+      // },
+      // {
+      //   path: "/all-packages",
+      //   element: <AllPackages />,
+      // },
+      // {
+      //   path: "/all-stories",
+      //   element: <AllStories />,
+      // },
+      // {
+      //   path: "/all-guides",
+      //   element: <AllGuides />,
+      // },
+      // {
+      //   path: "/forgetPassword",
+      //   element: <ForgotPassword />,
+      // },
+      //       {
+      //   path: "/about-us",
+      //   element: <AboutUs />,
+      // },
+      // {
+      //   path: "/offer",
+      //   element: <Offer />,
+      // },
     ],
   },
   {
