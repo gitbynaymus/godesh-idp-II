@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 // import TourismAndTravelGuide from "../components/TourismAndTravelGuide";
 // import TouristStories from "../components/TouristStories";
 import WhyChooseUs from "../components/WhyChooseUs";
-// import FeaturedDestinations from "../components/FeaturedDestinations";
+import FeaturedDestinations from "../components/FeaturedDestinations";
 import TravelTips from "../components/TravelTips";
 import Reviews from "../components/Reviews";
 // import Newsletter from "../components/Newsletter";
@@ -17,9 +17,9 @@ const Home = () => {
       {/* <AnimatedSection animation="fade-up">
         <TourismAndTravelGuide />
       </AnimatedSection> */}
-      {/* <AnimatedSection animation="fade-up">
+      <AnimatedSection animation="fade-up">
         <FeaturedDestinations />
-      </AnimatedSection> */}
+      </AnimatedSection>
       <AnimatedSection animation="fade-up">
         <TravelTips />
       </AnimatedSection>
