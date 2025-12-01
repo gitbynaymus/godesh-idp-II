@@ -2,7 +2,7 @@ import { createBrowserRouter, Navigate } from "react-router";
 import RootLayout from "../Layouts/RootLayout/RootLayout";
 import Home from "../pages/Home";
 // import DashboardLayout from "../Layouts/DashboardLayout/DashboardLayout";
-// import Login from "../pages/Login";
+import Login from "../pages/Login";
 // import SignUp from "../pages/SignUp";
 // import ForgotPassword from "../pages/ForgetPassword";
 // import Profile from "../pages/dashboard/Profile";
@@ -47,10 +47,10 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
-      // {
-      //   path: "/login",
-      //   element: <Login />,
-      // },
+      {
+        path: "/login",
+        element: <Login />,
+      },
       // {
       //   path: "/register",
       //   element: <SignUp />,
