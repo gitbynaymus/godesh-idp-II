@@ -28,9 +28,9 @@ import AllPackages from "../pages/AllPackages";
 // import { Elements } from "@stripe/react-stripe-js";
 // // import { loadStripe } from "@stripe/stripe-js";
 // import MyAssignedTours from "../pages/dashboard/Guide/MyAssignedTours";
-// import AllStories from "../pages/AllStories";
+import AllStories from "../pages/AllStories";
 // import AboutUs from "../pages/AboutUs";
-// import AllGuides from "../pages/AllGuides";
+import AllGuides from "../pages/AllGuides";
 import AccessDenied from "../pages/AccessDenied";
 // import RoleBasedRoute from "./RoleBasedRoute";
 // import Offer from "../pages/Offer";
@@ -67,14 +67,14 @@ const router = createBrowserRouter([
         path: "/all-packages",
         element: <AllPackages />,
       },
-      // {
-      //   path: "/all-stories",
-      //   element: <AllStories />,
-      // },
-      // {
-      //   path: "/all-guides",
-      //   element: <AllGuides />,
-      // },
+      {
+        path: "/all-stories",
+        element: <AllStories />,
+      },
+      {
+        path: "/all-guides",
+        element: <AllGuides />,
+      },
       // {
       //   path: "/forgetPassword",
       //   element: <ForgotPassword />,

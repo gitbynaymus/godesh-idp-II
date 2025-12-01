@@ -121,7 +121,7 @@ const Navbar = () => {
                 </li>
               </>
             )}
-            <li>
+            {/* <li>
               <NavLink
                 to="/about-us"
                 className={({ isActive }) =>
@@ -132,7 +132,7 @@ const Navbar = () => {
               >
                 About Us
               </NavLink>
-            </li>
+            </li> */}
           </ul>
 
           {/* Right side */}
