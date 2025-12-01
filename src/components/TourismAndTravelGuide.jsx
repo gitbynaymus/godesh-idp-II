@@ -4,7 +4,7 @@ import { HiMiniUserGroup } from "react-icons/hi2";
 import RandomPackages from "./RandomPackages";
 import { Link } from "react-router";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-// import TourGuides from "./TourGuides";
+import TourGuides from "./TourGuides";
 import Heading from "./shared/Heading";
 import SubHeading from "./shared/SubHeading";
 
@@ -32,7 +32,7 @@ const TourismAndTravelGuide = () => {
           </div>
         </TabItem>
         <TabItem title="Tour Guides" icon={HiMiniUserGroup}>
-          {/* <TourGuides /> */}
+          <TourGuides />
         </TabItem>
       </Tabs>
     </div>
