@@ -23,7 +23,7 @@ import SignUp from "../pages/SignUp";
 // import GuideProfile from "../pages/dashboard/Guide/GuideProfile";
 import PackageDetails from "../pages/PackageDetails";
 import AllPackages from "../pages/AllPackages";
-// import GuideDetails from "../pages/GuideDetails";
+import GuideDetails from "../pages/GuideDetails";
 // import Payment from "../pages/dashboard/Payment/Payment";
 // import { Elements } from "@stripe/react-stripe-js";
 // // import { loadStripe } from "@stripe/stripe-js";
@@ -59,10 +59,10 @@ const router = createBrowserRouter([
         path: "/package/:id",
         element: <PackageDetails />,
       },
-      // {
-      //   path: "/guide/:id",
-      //   element: <GuideDetails />,
-      // },
+      {
+        path: "/guide/:id",
+        element: <GuideDetails />,
+      },
       {
         path: "/all-packages",
         element: <AllPackages />,
