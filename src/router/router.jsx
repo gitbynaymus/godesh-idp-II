@@ -22,7 +22,7 @@ import Home from "../pages/Home";
 // import ApplicationDetails from "../pages/dashboard/Admin/ApplicationDetails";
 // import GuideProfile from "../pages/dashboard/Guide/GuideProfile";
 // import PackageDetails from "../pages/PackageDetails";
-// import AllPackages from "../pages/AllPackages";
+import AllPackages from "../pages/AllPackages";
 // import GuideDetails from "../pages/GuideDetails";
 // import Payment from "../pages/dashboard/Payment/Payment";
 // import { Elements } from "@stripe/react-stripe-js";
@@ -63,10 +63,10 @@ const router = createBrowserRouter([
       //   path: "/guide/:id",
       //   element: <GuideDetails />,
       // },
-      // {
-      //   path: "/all-packages",
-      //   element: <AllPackages />,
-      // },
+      {
+        path: "/all-packages",
+        element: <AllPackages />,
+      },
       // {
       //   path: "/all-stories",
       //   element: <AllStories />,
