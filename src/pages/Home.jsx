@@ -1,7 +1,7 @@
 import AnimatedSection from "../Animation/AnimatedSection";
 import Hero from "../components/Hero";
 // import Overview from "../components/Overview";
-// import TourismAndTravelGuide from "../components/TourismAndTravelGuide";
+import TourismAndTravelGuide from "../components/TourismAndTravelGuide";
 // import TouristStories from "../components/TouristStories";
 import WhyChooseUs from "../components/WhyChooseUs";
 import FeaturedDestinations from "../components/FeaturedDestinations";
@@ -14,9 +14,9 @@ const Home = () => {
   return (
     <>
       <Hero />
-      {/* <AnimatedSection animation="fade-up">
+      <AnimatedSection animation="fade-up">
         <TourismAndTravelGuide />
-      </AnimatedSection> */}
+      </AnimatedSection>
       <AnimatedSection animation="fade-up">
         <FeaturedDestinations />
       </AnimatedSection>
