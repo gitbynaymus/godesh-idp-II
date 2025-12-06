@@ -20,14 +20,14 @@ import UpdateStory from "../pages/dashboard/Tourist/UpdateStory";
 // import ManageCandidates from "../pages/dashboard/Admin/ManageCandidates";
 // import ManageAdminProfile from "../pages/dashboard/Admin/ManageAdminProfile";
 // import ApplicationDetails from "../pages/dashboard/Admin/ApplicationDetails";
-// import GuideProfile from "../pages/dashboard/Guide/GuideProfile";
+import GuideProfile from "../pages/dashboard/Guide/GuideProfile";
 import PackageDetails from "../pages/PackageDetails";
 import AllPackages from "../pages/AllPackages";
 import GuideDetails from "../pages/GuideDetails";
 import Payment from "../pages/dashboard/Payment/Payment";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
-// import MyAssignedTours from "../pages/dashboard/Guide/MyAssignedTours";
+import MyAssignedTours from "../pages/dashboard/Guide/MyAssignedTours";
 import AllStories from "../pages/AllStories";
 // import AboutUs from "../pages/AboutUs";
 import AllGuides from "../pages/AllGuides";
@@ -218,23 +218,23 @@ const router = createBrowserRouter([
         ),
       },
 
-  //     //guide route
-  //     {
-  //       path: "my-assign-tour",
-  //       element: (
-  //         <RoleBasedRoute allowedRoles={["guide"]}>
-  //           <MyAssignedTours />
-  //         </RoleBasedRoute>
-  //       ),
-  //     },
-  //     {
-  //       path: "guide-profile",
-  //       element: (
-  //         <RoleBasedRoute allowedRoles={["guide"]}>
-  //           <GuideProfile />
-  //         </RoleBasedRoute>
-  //       ),
-  //     },
+ //guide route
+      {
+        path: "my-assign-tour",
+        element: (
+          <RoleBasedRoute allowedRoles={["guide"]}>
+            <MyAssignedTours />
+          </RoleBasedRoute>
+        ),
+      },
+      {
+        path: "guide-profile",
+        element: (
+          <RoleBasedRoute allowedRoles={["guide"]}>
+            <GuideProfile />
+          </RoleBasedRoute>
+        ),
+      },
 ],
  },
   {
