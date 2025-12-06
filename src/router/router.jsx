@@ -1,17 +1,17 @@
 import { createBrowserRouter, Navigate } from "react-router";
 import RootLayout from "../Layouts/RootLayout/RootLayout";
 import Home from "../pages/Home";
-// import DashboardLayout from "../Layouts/DashboardLayout/DashboardLayout";
+import DashboardLayout from "../Layouts/DashboardLayout/DashboardLayout";
 import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
 // import ForgotPassword from "../pages/ForgetPassword";
 // import Profile from "../pages/dashboard/Profile";
-// import PrivateRoute from "./PrivateRoute";
+import PrivateRoute from "./PrivateRoute";
 // import AssignedTours from "../pages/dashboard/Admin/AssignedTours";
-// import DashboardRedirectByRole from "../Layouts/DashboardLayout/DashboardRedirectByRole";
+import DashboardRedirectByRole from "../Layouts/DashboardLayout/DashboardRedirectByRole";
 // import AddPackages from "../pages/dashboard/Admin/AddPackages";
-// import MyBookings from "../pages/dashboard/Tourist/MyBookings";
-// import TouristProfile from "../pages/dashboard/Tourist/TouristProfile";
+import MyBookings from "../pages/dashboard/Tourist/MyBookings";
+import TouristProfile from "../pages/dashboard/Tourist/TouristProfile";
 // import ManageStories from "../pages/dashboard/Tourist/ManageStories";
 // import JoinAsGuide from "../pages/dashboard/Tourist/JoinAsGuide";
 // import AddStories from "../pages/dashboard/Tourist/AddStories";
@@ -32,7 +32,7 @@ import AllStories from "../pages/AllStories";
 // import AboutUs from "../pages/AboutUs";
 import AllGuides from "../pages/AllGuides";
 import AccessDenied from "../pages/AccessDenied";
-// import RoleBasedRoute from "./RoleBasedRoute";
+import RoleBasedRoute from "./RoleBasedRoute";
 // import Offer from "../pages/Offer";
 import NotFound from "../pages/NotFound";
 
@@ -93,18 +93,18 @@ const router = createBrowserRouter([
     path: "/access-denied",
     element: <AccessDenied />,
   },
-  // {
-  //   path: "/dashboard",
-  //   element: (
-  //     <PrivateRoute>
-  //       <DashboardLayout />
-  //     </PrivateRoute>
-  //   ),
-  //   children: [
-  //     {
-  //       index: true,
-  //       element: <DashboardRedirectByRole />,
-  //     },
+{
+    path: "/dashboard",
+    element: (
+      <PrivateRoute>
+        <DashboardLayout />
+      </PrivateRoute>
+    ),
+ children: [
+      {
+        index: true,
+        element: <DashboardRedirectByRole />,
+      },
 
   //     // Admin-only routes
   //     {
@@ -157,22 +157,22 @@ const router = createBrowserRouter([
   //     },
 
   //     //Tourist-only routes
-  //     {
-  //       path: "my-bookings",
-  //       element: (
-  //         <RoleBasedRoute allowedRoles={["tourist"]}>
-  //           <MyBookings />
-  //         </RoleBasedRoute>
-  //       ),
-  //     },
-  //     {
-  //       path: "manage-tourist-profile",
-  //       element: (
-  //         <RoleBasedRoute allowedRoles={["tourist"]}>
-  //           <TouristProfile />
-  //         </RoleBasedRoute>
-  //       ),
-  //     },
+      {
+        path: "my-bookings",
+        element: (
+          <RoleBasedRoute allowedRoles={["tourist"]}>
+            <MyBookings />
+          </RoleBasedRoute>
+        ),
+      },
+      {
+        path: "manage-tourist-profile",
+        element: (
+          <RoleBasedRoute allowedRoles={["tourist"]}>
+            <TouristProfile />
+          </RoleBasedRoute>
+        ),
+      },
   //     {
   //       path: "manage-stories",
   //       element: (
@@ -235,8 +235,8 @@ const router = createBrowserRouter([
   //         </RoleBasedRoute>
   //       ),
   //     },
-  //   ],
-  // },
+],
+ },
   {
     path: "*",
     element: <NotFound />,
