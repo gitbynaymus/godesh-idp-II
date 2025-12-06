@@ -12,10 +12,10 @@ import DashboardRedirectByRole from "../Layouts/DashboardLayout/DashboardRedirec
 // import AddPackages from "../pages/dashboard/Admin/AddPackages";
 import MyBookings from "../pages/dashboard/Tourist/MyBookings";
 import TouristProfile from "../pages/dashboard/Tourist/TouristProfile";
-// import ManageStories from "../pages/dashboard/Tourist/ManageStories";
-// import JoinAsGuide from "../pages/dashboard/Tourist/JoinAsGuide";
-// import AddStories from "../pages/dashboard/Tourist/AddStories";
-// import UpdateStory from "../pages/dashboard/Tourist/UpdateStory";
+import ManageStories from "../pages/dashboard/Tourist/ManageStories";
+import JoinAsGuide from "../pages/dashboard/Tourist/JoinAsGuide";
+import AddStories from "../pages/dashboard/Tourist/AddStories";
+import UpdateStory from "../pages/dashboard/Tourist/UpdateStory";
 // import ManageUsers from "../pages/dashboard/Admin/ManageUsers";
 // import ManageCandidates from "../pages/dashboard/Admin/ManageCandidates";
 // import ManageAdminProfile from "../pages/dashboard/Admin/ManageAdminProfile";
@@ -173,38 +173,38 @@ const router = createBrowserRouter([
           </RoleBasedRoute>
         ),
       },
-  //     {
-  //       path: "manage-stories",
-  //       element: (
-  //         <RoleBasedRoute allowedRoles={["tourist","guide"]}>
-  //           <ManageStories />
-  //         </RoleBasedRoute>
-  //       ),
-  //     },
-  //     {
-  //       path: "join-as-guide",
-  //       element: (
-  //         <RoleBasedRoute allowedRoles={["tourist"]}>
-  //           <JoinAsGuide />
-  //         </RoleBasedRoute>
-  //       ),
-  //     },
-  //     {
-  //       path: "add-story",
-  //       element: (
-  //         <RoleBasedRoute allowedRoles={["tourist", "guide"]}>
-  //           <AddStories />
-  //         </RoleBasedRoute>
-  //       ),
-  //     },
-  //     {
-  //       path: "update-story/:id",
-  //       element: (
-  //         <RoleBasedRoute allowedRoles={["tourist", "guide"]}>
-  //           <UpdateStory />
-  //         </RoleBasedRoute>
-  //       ),
-  //     },
+      {
+        path: "manage-stories",
+        element: (
+          <RoleBasedRoute allowedRoles={["tourist","guide"]}>
+            <ManageStories />
+          </RoleBasedRoute>
+        ),
+      },
+      {
+        path: "join-as-guide",
+        element: (
+          <RoleBasedRoute allowedRoles={["tourist"]}>
+            <JoinAsGuide />
+          </RoleBasedRoute>
+        ),
+      },
+      {
+        path: "add-story",
+        element: (
+          <RoleBasedRoute allowedRoles={["tourist", "guide"]}>
+            <AddStories />
+          </RoleBasedRoute>
+        ),
+      },
+      {
+        path: "update-story/:id",
+        element: (
+          <RoleBasedRoute allowedRoles={["tourist", "guide"]}>
+            <UpdateStory />
+          </RoleBasedRoute>
+        ),
+      },
 
   //     // Shared route (Tourist → Pay for booking)
   //     {
